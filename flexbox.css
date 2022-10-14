@@ -1,0 +1,18 @@
+.flexcontainer{
+height:200px;
+width:100%;
+background: aqua;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.flexbox{
+    height:100px;
+    width:100px;
+    background: pink;
+    margin:20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+}

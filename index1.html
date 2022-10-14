@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JustWriteCode</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>JustWriteCode</h1>
+        </div>
+        
+        <i onclick="open_bar();" id="opp" class="fa fa-align-right fa-3x"></i>
+    </div>
+
+    <div id="con" class="con">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>CONTACT</li>
+            <li>LOGOUT</li>
+        </ul>
+
+        <i onclick="close_bar();" style="display: none;" id="clo" class='fa-solid fa-xmark fa-4x'></i>    
+    </div>
+
+
+    <script>
+        let opp=document.getElementById("opp");
+        let con=document.getElementById("con");
+        let clo=document.getElementById("clo");
+
+        function open_bar(){
+            con.style.width="350px";
+            opp.style.display="none";
+            clo.style.display="block";
+        }
+
+        function close_bar(){
+            con.style.width="0px";
+            opp.style.display="block";
+            clo.style.display="none";
+        }
+    </script>
+    
+</body>
+</html>
